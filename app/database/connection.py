@@ -1,8 +1,6 @@
 import sqlite3
 import os
 
-
-
 def connection_database():
     folder = os.path.dirname(os.path.abspath(__file__))
     name_database = 'urls.db'
