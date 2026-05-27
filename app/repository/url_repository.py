@@ -1,12 +1,12 @@
 from app.database.connection import connection_database
 
-def save_url(url_long, created_at):
+def save_url(url_long):
     #criando conexao
     conect = connection_database()
     cursor = conect.cursor()
     #execultando sql para salvar url longa
-    command_sql = 'INSERT INTO urls(original_url, created_at) VALUES (?,?)'
-    cursor.execute(command_sql,(url_long, created_at))
+    command_sql = 'INSERT INTO urls(original_url) VALUES (?)'
+    cursor.execute(command_sql,(url_long,))
     id_gerado = cursor.lastrowid
     #commit no banco
     conect.commit()
