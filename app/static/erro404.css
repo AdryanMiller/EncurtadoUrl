@@ -1,0 +1,58 @@
+
+.body-404-clean {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteiner-404-clean {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.conteiner-404-clean h1 {
+    font-size: 7rem;
+    color: #FFFFFF; 
+    margin: 0;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.conteiner-404-clean p {
+    font-size: 1.5rem;
+    color: #FFFFFF; 
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.botao-quadrado {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 0px; 
+    
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+
+.botao-quadrado:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}

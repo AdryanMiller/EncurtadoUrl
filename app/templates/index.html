@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Encurtador de Url</title>
+</head>
+<body>
+    <div class="conteiner">
+    <h1>ENCURTADOR URL</h1>
+    <p>Encurte sua url aqui</p>
+    <form action="/home/shorten" method="POST" class="card-formulario">
+
+        <div class="linha-input">
+            <input type="url" name="url" placeholder="URL com https://" required>
+            <button type="submit">Gerar</button>
+        </div>
+    </form>
+    
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            {% if category == 'sucess' %}
+                <input type="text" name="flash_sucess" value="{{ message }}" readonly>
+                
+            {%else%}
+                <p class="error">{{ message }}</p>
+            {%endif%}
+          {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    </div>
+</body>
+</html>
