@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,8 @@
 }
 
 body {
-    background-color: #FFA62B;
+    background-color: #0f172a;
+    color: #f8fafc;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,32 +22,28 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
 }
 
-/* Título grande e chamativo */
 h1 {
     font-size: 3rem;
-    color: #004BA8;
+    color: #38bdf8;
     font-weight: 800;
     letter-spacing: 1px;
 }
 
-/* Parágrafos menores */
 p {
     font-size: 1.2rem;
-    color: #12130F;
+    color: #94a3b8;
     font-weight: 500;
 }
 
-
 .card-formulario {
-    background-color: #FFFFFF;
+    background-color: #1e293b;
     width: 100%;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -59,36 +55,37 @@ p {
     width: 100%;
 }
 
-/* Input grande e arredondado */
 .linha-input input[type="url"] {
     flex: 1;
     padding: 15px 25px;
     font-size: 1rem;
-    border: 2px solid #E0E0E0;
+    background-color: #0f172a;
+    color: #ffffff;
+    border: 2px solid #334155;
     border-radius: 30px;
     outline: none;
     transition: border-color 0.3s;
 }
 
 .linha-input input[type="url"]:focus {
-    border-color: #004BA8;
+    border-color: #38bdf8;
 }
 
-/* Botão grande, redondo e combinando com o título */
 .linha-input button {
     padding: 15px 30px;
     font-size: 1rem;
     font-weight: bold;
-    background-color: #004BA8;
-    color: white;
+    background-color: #38bdf8;
+    color: #0f172a;
     border: none;
-    border-radius: 30px; /* Deixa bem redondo */
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
 }
 
 .linha-input button:hover {
-    background-color: #003677;
+    background-color: #0284c7;
+    color: #ffffff;
 }
 
 .linha-input button:active {
@@ -100,9 +97,9 @@ input[name="flash_sucess"] {
     padding: 15px;
     font-size: 1rem;
     text-align: center;
-    background-color: #E8F5E9;
-    color: #12664F; /* Texto verde para sucesso */
-    border: 2px solid  #2E7D32;
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border: 2px solid #059669;
     border-radius: 30px;
     outline: none;
     cursor: text;
@@ -114,12 +111,12 @@ input[name="flash_sucess"] {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #6DB1BF;
-    color: #12130F;
+    background-color: #ef4444;
+    color: #ffffff;
     padding: 15px 40px;
     border-radius: 8px;
     font-weight: bold;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     animation: faderIn 0.5s ease-out;
     z-index: 1000;
 }
