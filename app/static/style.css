@@ -111,12 +111,13 @@ input[name="flash_sucess"] {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ef4444;
+    background-color: #0f172a;
     color: #ffffff;
+    border: 2px solid #38bdf8;
     padding: 15px 40px;
     border-radius: 8px;
     font-weight: bold;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(46, 44, 44, 0.2);
     animation: faderIn 0.5s ease-out;
     z-index: 1000;
 }
